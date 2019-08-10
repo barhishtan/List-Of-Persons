@@ -10,21 +10,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    // MARK: - IB Outlets
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var eMailLabal: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    
+    // MARK: - Public Properties
+    var name: String!
+    var eMail: String!
+    var phone: String!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        nameLabel.text = name
+        eMailLabal.text = eMail
+        phoneLabel.text = phone
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

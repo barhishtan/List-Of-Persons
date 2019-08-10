@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    // MARK: - Private Properties
+    private let somePersons = Person.createPersons()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +26,22 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    override func tableView(_ tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
+        return somePersons.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    override func tableView(_ tableView: UITableView,
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SimpleCell",
+                                                 for: indexPath)
+        let person = somePersons[indexPath.row]
+        cell.textLabel?.text = person.name + " " + person.surname
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +78,22 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard segue.identifier == "toDetailVC" else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow
+            else { return }
+        
+        let detailVC = segue.destination as! DetailViewController
+        let person = somePersons[indexPath.row]
+        
+        detailVC.name = person.name + " " + person.surname
+        detailVC.phone = person.phone
+        detailVC.eMail = person.eMail
+        
     }
-    */
+
 
 }
