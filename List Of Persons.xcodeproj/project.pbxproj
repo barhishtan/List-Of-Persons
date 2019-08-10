@@ -12,6 +12,7 @@
 		9A0F316122FEE94A00331DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F315F22FEE94A00331DEA /* Main.storyboard */; };
 		9A0F316322FEE94B00331DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F316222FEE94B00331DEA /* Assets.xcassets */; };
 		9A0F316622FEE94B00331DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F316422FEE94B00331DEA /* LaunchScreen.storyboard */; };
+		9A0F316E22FEE98C00331DEA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F316D22FEE98C00331DEA /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9A0F316222FEE94B00331DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0F316522FEE94B00331DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0F316722FEE94B00331DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0F316D22FEE98C00331DEA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				9A0F315B22FEE94A00331DEA /* AppDelegate.swift */,
 				9A0F315D22FEE94A00331DEA /* ViewController.swift */,
 				9A0F315F22FEE94A00331DEA /* Main.storyboard */,
+				9A0F316D22FEE98C00331DEA /* Person.swift */,
 				9A0F316222FEE94B00331DEA /* Assets.xcassets */,
 				9A0F316422FEE94B00331DEA /* LaunchScreen.storyboard */,
 				9A0F316722FEE94B00331DEA /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0F316E22FEE98C00331DEA /* Person.swift in Sources */,
 				9A0F315E22FEE94A00331DEA /* ViewController.swift in Sources */,
 				9A0F315C22FEE94A00331DEA /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZ2WU5BVYA;
 				INFOPLIST_FILE = "List Of Persons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZ2WU5BVYA;
 				INFOPLIST_FILE = "List Of Persons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
