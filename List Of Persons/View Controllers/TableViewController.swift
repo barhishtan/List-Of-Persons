@@ -57,7 +57,6 @@ class TableViewController: UITableViewController {
     }
 
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "toDetailVC" else { return }
         guard let indexPath = tableView.indexPathForSelectedRow
@@ -71,6 +70,5 @@ class TableViewController: UITableViewController {
         detailVC.eMail = person.eMail
         
     }
-
 
 }

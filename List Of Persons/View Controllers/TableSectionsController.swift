@@ -19,7 +19,6 @@ class TableSectionsController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return somePersons.count
     }

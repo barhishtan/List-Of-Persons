@@ -21,7 +21,6 @@ class TableWithCellController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,7 +33,6 @@ class TableWithCellController: UITableViewController {
     
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell",
                                                  for: indexPath) as! TableViewCell
         let person = somePersons[indexPath.row]
