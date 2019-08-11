@@ -13,6 +13,7 @@ class TableViewController: UITableViewController {
     // MARK: - Private Properties
     private let somePersons = Person.createPersons()
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
