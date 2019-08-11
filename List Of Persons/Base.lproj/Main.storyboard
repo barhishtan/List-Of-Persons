@@ -195,6 +195,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.73658418660000002" green="0.41952598089999998" blue="0.96120077370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="NML-U5-Vei" kind="show" identifier="toCustomCells" id="kXx-bW-oBJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -207,6 +210,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kr-FV-eph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1332" y="512"/>
+        </scene>
+        <!--With Custom Cell-->
+        <scene sceneID="Y3U-xp-RbO">
+            <objects>
+                <tableViewController title="With Custom Cell" id="NML-U5-Vei" customClass="TableWithCellController" customModule="List_Of_Persons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mv7-Pf-bql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.73658418660000002" green="0.41952598089999998" blue="0.96120077370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="NML-U5-Vei" id="5Wk-N9-2Ky"/>
+                            <outlet property="delegate" destination="NML-U5-Vei" id="XcM-MK-WPZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QtT-WI-pOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="512"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="peu-8R-wgr">

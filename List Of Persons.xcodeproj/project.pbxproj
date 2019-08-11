@@ -14,6 +14,9 @@
 		9A0F316E22FEE98C00331DEA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F316D22FEE98C00331DEA /* Person.swift */; };
 		9A0F317022FEFF1D00331DEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F316F22FEFF1D00331DEA /* TableViewController.swift */; };
 		9A0F317222FEFFDB00331DEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F317122FEFFDB00331DEA /* DetailViewController.swift */; };
+		9A18EBA123004493002D7306 /* TableWithCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18EBA023004493002D7306 /* TableWithCellController.swift */; };
+		9A18EBA5230048A0002D7306 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A18EBA3230048A0002D7306 /* TableViewCell.swift */; };
+		9A18EBA6230048A0002D7306 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A18EBA4230048A0002D7306 /* TableViewCell.xib */; };
 		9A37401823001B9B00A796CC /* TableSectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37401723001B9B00A796CC /* TableSectionsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		9A0F316D22FEE98C00331DEA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9A0F316F22FEFF1D00331DEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9A0F317122FEFFDB00331DEA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A18EBA023004493002D7306 /* TableWithCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableWithCellController.swift; sourceTree = "<group>"; };
+		9A18EBA3230048A0002D7306 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9A18EBA4230048A0002D7306 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9A37401723001B9B00A796CC /* TableSectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,17 +66,36 @@
 		9A0F315A22FEE94A00331DEA /* List Of Persons */ = {
 			isa = PBXGroup;
 			children = (
+				9A18EBA223004840002D7306 /* Custom Cell */,
+				9A18EB9F230043C5002D7306 /* View Controllers */,
 				9A0F315B22FEE94A00331DEA /* AppDelegate.swift */,
 				9A0F315F22FEE94A00331DEA /* Main.storyboard */,
-				9A0F316F22FEFF1D00331DEA /* TableViewController.swift */,
-				9A0F317122FEFFDB00331DEA /* DetailViewController.swift */,
-				9A37401723001B9B00A796CC /* TableSectionsController.swift */,
 				9A0F316D22FEE98C00331DEA /* Person.swift */,
 				9A0F316222FEE94B00331DEA /* Assets.xcassets */,
 				9A0F316422FEE94B00331DEA /* LaunchScreen.storyboard */,
 				9A0F316722FEE94B00331DEA /* Info.plist */,
 			);
 			path = "List Of Persons";
+			sourceTree = "<group>";
+		};
+		9A18EB9F230043C5002D7306 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F316F22FEFF1D00331DEA /* TableViewController.swift */,
+				9A0F317122FEFFDB00331DEA /* DetailViewController.swift */,
+				9A37401723001B9B00A796CC /* TableSectionsController.swift */,
+				9A18EBA023004493002D7306 /* TableWithCellController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9A18EBA223004840002D7306 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A18EBA3230048A0002D7306 /* TableViewCell.swift */,
+				9A18EBA4230048A0002D7306 /* TableViewCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0F316622FEE94B00331DEA /* LaunchScreen.storyboard in Resources */,
+				9A18EBA6230048A0002D7306 /* TableViewCell.xib in Resources */,
 				9A0F316322FEE94B00331DEA /* Assets.xcassets in Resources */,
 				9A0F316122FEE94A00331DEA /* Main.storyboard in Resources */,
 			);
@@ -146,8 +172,10 @@
 			files = (
 				9A0F316E22FEE98C00331DEA /* Person.swift in Sources */,
 				9A0F317022FEFF1D00331DEA /* TableViewController.swift in Sources */,
+				9A18EBA123004493002D7306 /* TableWithCellController.swift in Sources */,
 				9A37401823001B9B00A796CC /* TableSectionsController.swift in Sources */,
 				9A0F315C22FEE94A00331DEA /* AppDelegate.swift in Sources */,
+				9A18EBA5230048A0002D7306 /* TableViewCell.swift in Sources */,
 				9A0F317222FEFFDB00331DEA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,7 +47,7 @@ class DetailViewController: UIViewController {
 
 // MARK: Background Color
 extension DetailViewController {
-    func addVerticalGradient(colors: [CGColor],
+   private func addVerticalGradient(colors: [CGColor],
                              locations: [Double]) {
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds

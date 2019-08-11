@@ -63,5 +63,11 @@ class TableSectionsController: UITableViewController {
         
         return view
     }
-    
+
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toCustomCells" else { return }
+        let tableWithCellVC = segue.destination as! TableWithCellController
+        tableWithCellVC.somePersons = self.somePersons
+    }
 }
