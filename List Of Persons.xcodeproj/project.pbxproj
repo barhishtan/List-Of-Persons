@@ -14,6 +14,7 @@
 		9A0F316E22FEE98C00331DEA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F316D22FEE98C00331DEA /* Person.swift */; };
 		9A0F317022FEFF1D00331DEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F316F22FEFF1D00331DEA /* TableViewController.swift */; };
 		9A0F317222FEFFDB00331DEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F317122FEFFDB00331DEA /* DetailViewController.swift */; };
+		9A37401823001B9B00A796CC /* TableSectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37401723001B9B00A796CC /* TableSectionsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9A0F316D22FEE98C00331DEA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9A0F316F22FEFF1D00331DEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9A0F317122FEFFDB00331DEA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A37401723001B9B00A796CC /* TableSectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 			children = (
 				9A0F315B22FEE94A00331DEA /* AppDelegate.swift */,
 				9A0F315F22FEE94A00331DEA /* Main.storyboard */,
-				9A0F317122FEFFDB00331DEA /* DetailViewController.swift */,
 				9A0F316F22FEFF1D00331DEA /* TableViewController.swift */,
+				9A0F317122FEFFDB00331DEA /* DetailViewController.swift */,
+				9A37401723001B9B00A796CC /* TableSectionsController.swift */,
 				9A0F316D22FEE98C00331DEA /* Person.swift */,
 				9A0F316222FEE94B00331DEA /* Assets.xcassets */,
 				9A0F316422FEE94B00331DEA /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				9A0F316E22FEE98C00331DEA /* Person.swift in Sources */,
 				9A0F317022FEFF1D00331DEA /* TableViewController.swift in Sources */,
+				9A37401823001B9B00A796CC /* TableSectionsController.swift in Sources */,
 				9A0F315C22FEE94A00331DEA /* AppDelegate.swift in Sources */,
 				9A0F317222FEFFDB00331DEA /* DetailViewController.swift in Sources */,
 			);
