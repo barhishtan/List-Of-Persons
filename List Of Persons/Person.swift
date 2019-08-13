@@ -53,13 +53,11 @@ struct Person {
         let eMails = self.eMails.shuffled()
         var arrayOfPersons = [Person]()
         
-        for ((name, surname), (phone, eMail))
-            in zip(zip(names, surnames),
-                   zip(phones, eMails)) {
-                let person = Person(name: name,
-                                    surname: surname,
-                                    phone: phone,
-                                    eMail: eMail)
+        for index in 0...names.count - 1 {
+                let person = Person(name: names[index],
+                                    surname: surnames[index],
+                                    phone: phones[index],
+                                    eMail: eMails[index])
                 arrayOfPersons.append(person)
         }
         

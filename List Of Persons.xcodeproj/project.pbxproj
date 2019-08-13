@@ -66,11 +66,11 @@
 		9A0F315A22FEE94A00331DEA /* List Of Persons */ = {
 			isa = PBXGroup;
 			children = (
+				9A0F315B22FEE94A00331DEA /* AppDelegate.swift */,
+				9A0F316D22FEE98C00331DEA /* Person.swift */,
 				9A18EBA223004840002D7306 /* Custom Cell */,
 				9A18EB9F230043C5002D7306 /* View Controllers */,
-				9A0F315B22FEE94A00331DEA /* AppDelegate.swift */,
 				9A0F315F22FEE94A00331DEA /* Main.storyboard */,
-				9A0F316D22FEE98C00331DEA /* Person.swift */,
 				9A0F316222FEE94B00331DEA /* Assets.xcassets */,
 				9A0F316422FEE94B00331DEA /* LaunchScreen.storyboard */,
 				9A0F316722FEE94B00331DEA /* Info.plist */,

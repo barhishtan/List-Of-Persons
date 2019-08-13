@@ -16,9 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     
     // MARK: - Public Properties
-    var name: String!
-    var eMail: String!
-    var phone: String!
+    var person: Person!
     
     // MARK: - Private Properties
     // Colors for background gradient
@@ -38,9 +36,9 @@ class DetailViewController: UIViewController {
         addVerticalGradient(colors: [firstColor, secondColor, thirdColor],
                             locations: [firstLocation, secondLocation, thirdLocation])
         
-        nameLabel.text = name
-        eMailLabal.text = eMail
-        phoneLabel.text = phone
+        nameLabel.text = person.name + " " + person.surname
+        eMailLabal.text = person.eMail
+        phoneLabel.text = person.phone
     }
     
 }

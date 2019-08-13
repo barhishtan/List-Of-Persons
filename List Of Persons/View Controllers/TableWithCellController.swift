@@ -11,7 +11,7 @@ import UIKit
 class TableWithCellController: UITableViewController {
     
     // MARK: - Public Properties
-    var somePersons: [Person]!
+    var persons: [Person]!
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class TableWithCellController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
-        return somePersons.count
+        return persons.count
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -35,7 +35,7 @@ class TableWithCellController: UITableViewController {
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell",
                                                  for: indexPath) as! TableViewCell
-        let person = somePersons[indexPath.row]
+        let person = persons[indexPath.row]
         cell.nameLabel.text = person.name + " " + person.surname
         cell.phoneLabel.text = person.phone
         cell.eMailLabel.text = person.eMail
@@ -46,7 +46,6 @@ class TableWithCellController: UITableViewController {
     
     // MARK: - Private Methods
     private func customCellRegistration() {
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "CustomCell")
         let xib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(xib, forCellReuseIdentifier: "CustomCell")
         tableView.rowHeight = 110

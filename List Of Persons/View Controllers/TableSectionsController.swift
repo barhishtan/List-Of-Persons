@@ -11,16 +11,11 @@ import UIKit
 class TableSectionsController: UITableViewController {
     
     // MARK: - Private Properties
-    private let somePersons = Person.createPersons()
-
-    // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    private let persons = Person.createPersons()
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return somePersons.count
+        return persons.count
     }
 
     override func tableView(_ tableView: UITableView,
@@ -31,7 +26,7 @@ class TableSectionsController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SimpleCell2", for: indexPath)
-        let person = somePersons[indexPath.section]
+        let person = persons[indexPath.section]
         let text = (indexPath.row == 0 ? person.eMail : person.phone)
         cell.textLabel?.text = text
         
@@ -53,7 +48,7 @@ class TableSectionsController: UITableViewController {
                           height: view.frame.height))
         
         label.font = UIFont(name: "ChalkboardSE-Regular", size: 15)
-        let person = somePersons[section]
+        let person = persons[section]
         label.text = person.name + " " + person.surname
         label.textColor = .white
         
@@ -67,6 +62,6 @@ class TableSectionsController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "toCustomCells" else { return }
         let tableWithCellVC = segue.destination as! TableWithCellController
-        tableWithCellVC.somePersons = self.somePersons
+        tableWithCellVC.persons = self.persons
     }
 }
