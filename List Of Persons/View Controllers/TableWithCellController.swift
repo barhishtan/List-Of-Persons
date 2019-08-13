@@ -21,13 +21,13 @@ class TableWithCellController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
         return somePersons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     
@@ -39,7 +39,8 @@ class TableWithCellController: UITableViewController {
         cell.nameLabel.text = person.name + " " + person.surname
         cell.phoneLabel.text = person.phone
         cell.eMailLabel.text = person.eMail
-
+        cell.selectionStyle = .none
+        
         return cell
     }
     
